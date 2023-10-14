@@ -1,5 +1,6 @@
 "use client"
 import Image from "next/image";
+import { useRouter } from 'next/navigation';
 import {
   Card,
   CardContent,
@@ -10,11 +11,9 @@ import {
 } from "@/components/ui/card";
 import { Key } from "lucide-react";
 
-function navigateOnClick(url: string) {
-  window.location.href = url
-}
-
 export default function Home() {
+  const router = useRouter();
+  
   return (
     <>
       <div>
@@ -34,14 +33,15 @@ export default function Home() {
           <p>and I&apos;m having fun writing code.</p>
         </CardContent>
       </Card>
-      <Card className="w-80 mx-auto mt-40 shadow-glass backdrop-blur-[10px]  border-1 bg-black/50"
-        onClick={() => navigateOnClick("projects/dare_to_share")}
-      >
+      <Card className="w-80 mx-auto mt-40 shadow-glass backdrop-blur-[10px]  border-1 bg-black/50">
         <CardHeader>
           <CardTitle className="text-white">My work</CardTitle>
         </CardHeader>
         <CardContent>
-          <Card key={"1234"} className="shadow-glass backdrop-blur-[10px]  border-1 bg-black/50 inline-flex">
+         <Card
+            onClick={() => router.push('projects/dare_to_share')}
+            className="shadow-glass backdrop-blur-[10px]  border-1 bg-black/50 inline-flex "
+          >
             <CardContent >
               <Image
                 className="mt-5 rounded-md"
