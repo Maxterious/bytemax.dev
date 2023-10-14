@@ -22,10 +22,10 @@ export default function Home() {
       </div>
       <Card className="w-80 mx-auto mt-16 shadow-glass backdrop-blur-[10px]  border-1 bg-black/50">
         <CardHeader>
-          <CardTitle className="text-white">Hey, I'm Bytemax</CardTitle>
+          <CardTitle className="text-white">Hey, I&apos;m Bytemax</CardTitle>
         </CardHeader>
         <CardContent className="text-white">
-          <p>and I'm having fun writing code.</p>
+          <p>and I&apos;m having fun writing code.</p>
         </CardContent>
       </Card>
       <Card className="w-80 mx-auto mt-40 shadow-glass backdrop-blur-[10px]  border-1 bg-black/50">
