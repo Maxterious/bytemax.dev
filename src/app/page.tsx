@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image";
 import {
   Card,
@@ -7,6 +8,11 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { Key } from "lucide-react";
+
+function navigateOnClick(url: string) {
+  window.location.href = url
+}
 
 export default function Home() {
   return (
@@ -28,13 +34,31 @@ export default function Home() {
           <p>and I&apos;m having fun writing code.</p>
         </CardContent>
       </Card>
-      <Card className="w-80 mx-auto mt-40 shadow-glass backdrop-blur-[10px]  border-1 bg-black/50">
+      <Card className="w-80 mx-auto mt-40 shadow-glass backdrop-blur-[10px]  border-1 bg-black/50"
+        onClick={() => navigateOnClick("projects/dare_to_share")}
+      >
         <CardHeader>
-          <CardTitle className="text-white">My projects</CardTitle>
+          <CardTitle className="text-white">My work</CardTitle>
         </CardHeader>
-
-        {/* Card carousel with my projects */}
-
+        <CardContent>
+          <Card key={"1234"} className="shadow-glass backdrop-blur-[10px]  border-1 bg-black/50 inline-flex">
+            <CardContent >
+              <Image
+                className="mt-5 rounded-md"
+                src={"/dare_to_share_icon.png"}
+                alt="dare to share icon"
+                width={50}
+                height={50}
+              >
+              </Image>
+            </CardContent>
+            <CardContent className="mt-8">
+              <span className="text-white">
+                Dare to Share
+              </span>
+            </CardContent>
+          </Card>
+        </CardContent>
       </Card>
     </>
   );
