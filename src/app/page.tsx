@@ -27,22 +27,19 @@ export default function Home() {
           <CardTitle className="text-white">My work</CardTitle>
         </CardHeader>
         <CardContent>
-          <Card className="shadow-glass backdrop-blur-[10px] border-1 bg-black/50">
+          <Card className="shadow-glass backdrop-blur-[10px] border-1 bg-black/50 justify-between">
             <Link className="flex" href={'projects/dare_to_share'}>
-              <CardContent className="m-auto">
+              <CardContent>
                 <Image
                   className="mt-5 rounded-md"
-                  src={"/dare_to_share_icon.png"}
+                  src={'/dare_to_share_icon.png'}
                   alt="dare to share icon"
                   width={50}
                   height={50}
-                >
-                </Image>
+                ></Image>
               </CardContent>
-              <CardContent className="pt-8">
-                <span className="text-white">
-                  Dare to Share
-                </span>
+              <CardContent className="flex items-center p-0">
+                <span className="text-white text-left">Dare to Share</span>
               </CardContent>
             </Link>
           </Card>
