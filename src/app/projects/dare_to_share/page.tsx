@@ -38,7 +38,7 @@ export default function DareToShare() {
                     <p>It&apos;s currently only available at the Google Play Store.</p>
 
                     <br />
-                    <p>Because it&apos;s written in flutter, the effort to release it for iOS is not that high.</p>
+                    <p>Because it&apos;s written in dart with flutter, the effort to release it for iOS is not that high.</p>
                 </CardContent>
             </Card>
         </div>
