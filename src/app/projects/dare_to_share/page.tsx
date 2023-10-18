@@ -51,7 +51,7 @@ export default function DareToShare() {
                     </CardFooter>
                 </Card>
 
-                <Card className="w-80 mx-auto mt-40 shadow-glass backdrop-blur-[10px] border-1 bg-black/80">
+                <Card className="w-80 mx-auto mt-12 shadow-glass backdrop-blur-[10px] border-1 bg-black/80">
                     <CardContent className="text-white pt-3">
                         <p>Dare to Share is designed to be a fun and loosening up party game.</p>
                         <br />
