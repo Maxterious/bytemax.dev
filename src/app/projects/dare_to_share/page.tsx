@@ -41,7 +41,7 @@ export default function DareToShare() {
                         </CardContent>
                     </div>
                     <CardFooter className="w-full pb-2 justify-center">
-                        <a href='https://play.google.com/store/apps/details?id=com.dareToShare.dare_to_share.prod&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
+                        <a href='https://play.google.com/store/apps/details?id=com.dareToShare.dare_to_share.prod&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1' target="_blank">
                             <img
                                 className="w-40 mx-auto"
                                 alt='Get it on Google Play'
